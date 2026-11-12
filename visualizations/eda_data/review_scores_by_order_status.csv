@@ -1,0 +1,9 @@
+order_status,average_review_score,orders_with_reviews
+approved,2.5,2
+canceled,1.8,605
+created,2.3333333333333335,3
+delivered,4.156186520855942,95832
+invoiced,1.6423948220064726,309
+processing,1.271186440677966,295
+shipped,2.002422480620155,1032
+unavailable,1.530252100840336,595
