@@ -77,28 +77,6 @@ Five charts were created:
 
 All chart images are available in the `visualizations/charts/` folder.
 
-## Project Structure
-
-```text
-Advanced_Logistics_Analysis/
-│
-├── data/
-│   ├── raw/
-│   └── processed/
-│
-├── python_code/
-│
-├── visualizations/
-│   ├── eda_data/
-│   └── charts/
-│
-├── report/
-├── screenshots/
-│
-├── README.md
-├── requirements.txt
-└── .gitignore
-```
 
 ## Installation and Execution
 
