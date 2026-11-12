@@ -1,0 +1,46 @@
+EXPLORATORY DATA ANALYSIS REPORT
+=================================================================
+
+1. OVERALL ORDER SUMMARY
+Total unique orders: 99,441
+Delivered orders: 96,478
+Total order items: 112,650
+Customer states represented: 27
+
+2. MONTHLY ORDER TREND
+Months covered: 25
+Highest-order month: 2017-11
+Orders in highest month: 7,544
+
+3. DELIVERY PERFORMANCE
+Delivered orders eligible for delay analysis: 96,470
+Average delivery days: 12.56
+Median delivery days: 10.22
+Late deliveries: 7,826
+On-time or early deliveries: 88,644
+Late delivery percentage: 8.11%
+Average delay days: -11.18
+
+4. FREIGHT AND PAYMENT
+Average freight charge per delivered order: 22.79
+Total recorded freight charges: 2,198,275.64
+Total recorded payment value for delivered orders: 15,422,461.77
+
+5. PRODUCT CATEGORY
+Top category by product revenue: health_beauty
+Category product revenue: 1,258,681.34
+
+6. REVIEW SCORES
+Average review score: 4.09
+Most common review score: 5
+
+7. STATE DELIVERY PERFORMANCE
+Highest average delivery time: RR (29.39 days)
+Lowest average delivery time: SP (8.76 days)
+
+8. INTERPRETATION NOTES
+Freight value represents the freight charge recorded in the dataset, not the logistics company's actual internal transportation cost.
+Delivery performance is calculated only for delivered orders with both actual and estimated delivery timestamps.
+Category revenue is the sum of recorded item prices, not company profit.
+
+EDA COMPLETED.

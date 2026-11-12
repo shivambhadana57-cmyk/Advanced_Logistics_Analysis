@@ -1,0 +1,44 @@
+BUSINESS INSIGHTS AND RECOMMENDATIONS
+=================================================================
+
+1. ORDER DEMAND
+The highest order volume occurred in 2017-11, with 7,544 orders.
+The first month in the dataset is 2016-09 (4 orders).
+The last month in the dataset is 2018-10 (4 orders).
+The first and last months may cover incomplete periods. Their low counts should be checked before drawing demand conclusions.
+
+2. DELIVERY PERFORMANCE
+Of 96,470 eligible delivered orders, 7,826 were late (8.11%).
+88,644 orders were delivered on time or early.
+Recommendation: investigate late deliveries by destination, seller, and order period to identify where delays are concentrated.
+
+3. GEOGRAPHICAL PERFORMANCE
+AM had the highest average delivery time among states with at least 100 eligible orders (26.43 days).
+SP had the lowest average delivery time among the same group (8.76 days).
+Recommendation: review delivery routes, distance, seller locations, and carrier performance in slower destinations. The state comparison shows an association, not the cause of delays.
+
+4. PRODUCT CATEGORY PERFORMANCE
+health_beauty ranked first by recorded item revenue, at R$1,258,681.34.
+watches_gifts ranked second by recorded item revenue, at R$1,205,005.68.
+Recommendation: use category demand when planning inventory and fulfilment capacity, while considering seasonality and stock availability.
+
+5. CUSTOMER REVIEW PATTERNS
+The weighted average review score was 4.09 out of 5.
+Five-star reviews: 57,328 (57.78%).
+One-star reviews: 11,424 (11.51%).
+Recommendation: examine low-score orders alongside delivery delays and review comments to identify possible service issues. Do not assume delivery delay is the only reason for low scores.
+
+6. FREIGHT CHARGE INTERPRETATION
+The dataset records freight charges paid or associated with orders. These values should not be treated as the logistics company's actual internal transportation costs or profit.
+Recommendation: compare freight charges by destination, order weight, and product category to understand customer-facing shipping patterns.
+
+7. PROJECT LIMITATIONS
+- The dataset represents Brazilian e-commerce activity, not global logistics.
+- The data covers a historical period and may not represent current operations.
+- Some order timestamps and product measurements are missing.
+- Date sequence inconsistencies were flagged and not automatically removed.
+- Duplicate review IDs were retained for investigation.
+- Freight charges do not provide actual carrier operating costs.
+- The analysis identifies patterns and associations, not proven causes.
+
+BUSINESS INSIGHT ANALYSIS COMPLETED.

@@ -1,0 +1,134 @@
+
+=================================================================
+1. ORDER STATUS ANALYSIS
+=================================================================
+order_status
+delivered      96478
+shipped         1107
+canceled         625
+unavailable      609
+invoiced         314
+processing       301
+created            5
+approved           2
+Name: count, dtype: int64
+
+Missing delivery dates by order status:
+order_status
+approved          2
+canceled        619
+created           5
+delivered         8
+invoiced        314
+processing      301
+shipped        1107
+unavailable     609
+Name: order_delivered_customer_date, dtype: int64
+
+=================================================================
+2. DATE QUALITY ANALYSIS
+=================================================================
+
+order_purchase_timestamp
+Missing: 0
+Invalid non-empty dates: 0
+
+order_approved_at
+Missing: 160
+Invalid non-empty dates: 0
+
+order_delivered_carrier_date
+Missing: 1783
+Invalid non-empty dates: 0
+
+order_delivered_customer_date
+Missing: 2965
+Invalid non-empty dates: 0
+
+order_estimated_delivery_date
+Missing: 0
+Invalid non-empty dates: 0
+
+=================================================================
+3. ORDER DATE SEQUENCE CHECKS
+=================================================================
+order_approved_at before order_purchase_timestamp: 0
+order_delivered_carrier_date before order_approved_at: 1359
+order_delivered_customer_date before order_delivered_carrier_date: 23
+
+=================================================================
+4. DELIVERY PERFORMANCE
+=================================================================
+Eligible delivered orders: 96470
+Average delivery days: 12.56
+Median delivery days: 10.22
+Late orders: 7826
+On-time or early orders: 88644
+Average delay days: -11.18
+
+=================================================================
+5. FREIGHT AND PRICE QUALITY
+=================================================================
+
+price
+Minimum: 0.85
+Maximum: 6735.0
+Zero values: 0
+Negative values: 0
+
+freight_value
+Minimum: 0.0
+Maximum: 409.68
+Zero values: 383
+Negative values: 0
+
+=================================================================
+6. PRODUCT DATA QUALITY
+=================================================================
+
+product_weight_g
+Missing: 2
+Zero values: 4
+Negative values: 0
+
+product_length_cm
+Missing: 2
+Zero values: 0
+Negative values: 0
+
+product_height_cm
+Missing: 2
+Zero values: 0
+Negative values: 0
+
+product_width_cm
+Missing: 2
+Zero values: 0
+Negative values: 0
+
+=================================================================
+7. DUPLICATE IDENTIFIER CHECKS
+=================================================================
+Orders - order_id: 0
+Customers - customer_id: 0
+Sellers - seller_id: 0
+Products - product_id: 0
+Reviews - review_id: 814
+Order Items - order_id + item_id: 0
+
+=================================================================
+8. RELATIONSHIP / FOREIGN KEY CHECKS
+=================================================================
+Items with unknown order IDs: 0
+Orders with unknown customer IDs: 0
+Items with unknown seller IDs: 0
+Items with unknown product IDs: 0
+
+=================================================================
+9. GEOLOCATION DUPLICATE ANALYSIS
+=================================================================
+Total records: 1000163
+Exact duplicate rows: 261831
+Repeated postal code records: 981148
+
+DATA QUALITY ASSESSMENT COMPLETED.
